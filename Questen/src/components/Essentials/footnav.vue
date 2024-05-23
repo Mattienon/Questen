@@ -40,7 +40,8 @@
   .position {
   display: flex;
   flex-direction: column;
-  min-height: 500vh; /* Ensure the container takes the full viewport height */
+  height: 500vh;
+  z-index: 1000;
 }
 
 .footer {

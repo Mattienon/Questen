@@ -27,6 +27,8 @@
 
     <!-- Placeholder Content -->
   </div>
+
+ 
 </template>
 
 <script setup>
@@ -35,6 +37,7 @@ import hero from '@/components/HomeView/hero.vue';
 import bottomcard from '@/components/HomeView/bottomcard.vue';
 import logoarea from '@/components/HomeView/logoarea.vue';
 import infoboxes from '@/components/HomeView/infoboxes.vue';
+import footnav from '@/components/Essentials/footnav.vue';
 </script>
 
 <style lang="scss" scoped>
@@ -44,24 +47,51 @@ import infoboxes from '@/components/HomeView/infoboxes.vue';
   align-items: center;
   justify-content: center;
   z-index: 10;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 .hero-area{
-background-color: aqua;
 width: 95%;
 z-index: 20;
-}
-.info-boxes{
-  padding: 5%;
 }
 .additional-info{
   margin-top: 8%;;
 }
 .bottom-card{
   margin-top: 10%;
-  background-color: aqua;
   width: 95%;
   z-index: 20;
 }
+
+
+//media
+
+
+
+@media (max-width: 1024px) {
+    .info-boxes, .additional-info, .logo-area{
+      align-items: center;
+      margin: auto;
+      width: 85%;
+      padding: 5%
+      
+      
+    }
+    .logo-area{
+      margin-left: 14%;
+    }
+    }
+
+    @media (max-width: 600px) {
+      .logo-area{
+      display: none;
+    }
+    .info-boxes, .additional-info, .logo-area{
+      align-items: center;
+      margin: auto;
+      width: 75%;
+      padding: 50%
+      
+    }
+    }
 
 </style>

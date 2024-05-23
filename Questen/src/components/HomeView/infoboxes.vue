@@ -124,17 +124,16 @@
   }
   
   .card {
-    position: relative;
-    width: 100%;
-    height: 60%;
-    border: none;
-    border-radius: 30px;
-    background-color: $secondary-purple; /* Example color */
-    color: #fff; /* Example color */
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
+  position: relative;
+  width: 100%;
+  height: 60%;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(to bottom, $secondary-purple, $primary-purple);
+  color: #fff;
+  padding: 20px;
+}
+
   .card-img {
     width: 100%;
     height: auto;

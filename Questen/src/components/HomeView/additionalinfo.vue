@@ -65,6 +65,10 @@
     border: none;
     display: flex;
     flex-direction: column;
+    border-radius: 30px;
+  background: linear-gradient(to bottom, $light-purple, $primary-purple);
+  color: #fff;
+  padding: 20px;
   }
   
   .card-body {

@@ -3,7 +3,8 @@
 
 #app
 {
-  height: 400vh;
+  min-height: 400vh;
+  max-height: 600vh;
   overflow: hidden;
 
 }

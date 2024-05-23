@@ -60,6 +60,7 @@
   const toggleCollapse = () => {
     isCollapseExpanded.value = !isCollapseExpanded.value;
   };
+  
   </script>
   
   

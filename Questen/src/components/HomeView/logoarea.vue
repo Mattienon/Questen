@@ -1,7 +1,7 @@
 <template>
   <div class="video-container">
     <video class="circular-video" autoplay loop muted playsinline>
-      <source src="" type="video/mp4">
+      <source src="@/assets/Videos/logo.mp4" type="video/mp4">
     </video>
   </div>
 </template>

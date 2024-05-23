@@ -10,8 +10,9 @@
    <!-- outerim -->
   </main>
   <totheTOP />
-    <footnav />
-  </div>
+  
+  </div>  
+  <footnav />
 </template>
 
 <script setup>
@@ -37,7 +38,7 @@ $notchSize: 15px;
   left: 50%;
   transform: translateX(-50%);
   width: 85%;
-  min-height: 350vh;
+  min-height: 400vh;
   z-index: -1;
   border: 10px outset $primary-yellow;
   background: linear-gradient(to bottom, $primary-purple 70%, $primary-green 95%);
@@ -53,10 +54,11 @@ $notchSize: 15px;
   );
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .outerim {
-    min-height: 450vh;
+    min-height: 550vh;
     width: 95%;
   }
 }
+
 </style>
