@@ -54,7 +54,7 @@
   }
   
   .card {
-    width: 80%;
+    width: 90%;
     height: 90%;
     border: solid 8px $primary-yellow;
     padding: 2%;
@@ -64,7 +64,7 @@
     justify-content: center;
     align-items:center;
     margin: auto;
-    padding: 10%
+    padding: 5%
   }
   
   .feather-border::before,
@@ -91,11 +91,18 @@
     .row .col-6 {
       flex-direction: column;
       width: 100%;
-      justify-content: center;
-      align-items: center;
-      margin: auto;
-      margin-top:1rem;
+      padding: 0%
     }
+    img {
+    width: 100%;
+    height: 100px; /* Set a fixed height for the images */
+  }
+  .card{
+    width: 80%
+  }
+  .gallery-container{
+    padding: none;
+  }
   }
 
   </style>

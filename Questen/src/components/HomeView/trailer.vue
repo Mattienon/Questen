@@ -50,7 +50,7 @@ span{
   .videocontainer iframe {
     width: 710px;
     height: 400px;
-    padding: 5%;
+    padding: 10%;
   }
 
   @media (max-width: 600px){

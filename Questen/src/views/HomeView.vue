@@ -52,11 +52,11 @@ import trailer from '@/components/HomeView/trailer.vue';
   z-index: 10;
 }
 .info-boxes{
-  margin-top: 20%;
+  margin-top: 25%;
 }
 .trailer{
   padding: 0%;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   width: 100%;
 }
 

@@ -74,7 +74,7 @@
     flex-direction: column;
     align-items: center;
     padding: 15px 40px;
-    z-index: 10;
+    z-index: 15;
     background: linear-gradient(to bottom, $primary-purple 5%, $light-purple(55%) 30%, rgba(0, 0, 0, 0) 100%);
     overflow-x: hidden;
   
