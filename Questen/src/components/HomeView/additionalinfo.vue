@@ -17,21 +17,24 @@
   </template>
   
   <script setup>
-
+ 
+ import spise from '@/assets/images/spise.jpg'
+ import fælles from '@/assets/images/fælles.jpg'
+ import biled from '@/assets/images/biled.jpg'
   
   const cards = [
     {
-        imgSrc: '',
+        imgSrc: spise,
       title: 'Bar & By',
       description: 'Efter din Quest åbner dronning Louise op for magiske drinks, der smager af eventyr ',
     },
     {
-        imgSrc: '',
+        imgSrc: fælles,
       title: 'Fantasy Festival',
       description: 'The Quest er en del af Esbjergs berømte Fantasy Festival.',
     },
     {
-        imgSrc: '',
+        imgSrc: biled,
       title: 'Aktiviteter',
       description: 'Questen tager ca 1 time og derefter kan du gå ud og nyde godt af hvad Festivalen har at tilbyde.'
     }

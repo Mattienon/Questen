@@ -17,9 +17,26 @@
   
   <script setup>
   import { ref } from 'vue';
+  import violin from '@/assets/images/Violin.jpg'
+  import pege from '@/assets/images/pege.jpg'
+  import musik from '@/assets/images/musik.jpg'
+  import heks from '@/assets/images/heks.jpg'
+  import fotograf from '@/assets/images/fotograf.jpg'
+  import elf from '@/assets/images/elf.jpg'
+
 
   const cards = ref([
-    { imageUrl: '', alt: 'Violin image', text: 'Hyggelig musik bliver spillet og hygget om.' },
+  { imageUrl: violin, alt: 'Violin image', text: 'Hyggelig musik bliver spillet og hygget om.' },
+
+  { imageUrl: pege, alt: 'Violin image', text: 'En masse at se.' },
+
+  { imageUrl: musik, alt: 'Violin image', text: 'Flot scene med en masse musik.' },
+
+  { imageUrl: heks, alt: 'Violin image', text: 'Kom og mød Maulice.' },
+
+  { imageUrl: fotograf, alt: 'Violin image', text: 'Hygge områder, hvor du kan spise og drikke.' },
+
+  { imageUrl: elf , alt: 'Violin image', text: 'Mange dygtige skuespillere.' },
  
   ]);
   </script>
@@ -40,11 +57,12 @@
   h1 {
     padding-top: 2rem;
     padding-bottom: 1.5rem;
+  
     color: $primary-yellow;
   }
   
   .card {
-    width: 95%;
+    width: 65%;
     height: 95%;
     border: solid 8px $primary-yellow;
     padding: 2%;
