@@ -3,7 +3,12 @@
     <footer class="footer">
       <div class="greenfoot">  
         <div class="btn btn-dark"><span>Fantasy Festival</span></div>
-        <span class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam itaque sint natus, libero.</span>
+        <span class="text">
+          <h1>Kontakt os</h1>
+          <p> Fantasyfestival@esbjerg.dk  </p>
+          <p> 79 000000</p>
+          
+      </span>
       
       </div>
       
@@ -71,6 +76,16 @@ const navigationLinks = ref([
   padding-left: 1rem;
   color: white; /* Change text color to white for better visibility */
 }
+.text h1{
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.text p {
+  font-size: 18px;
+ color: white;
+ margin-right: 50px;
+}
 .whiteframe {
   background-color: white;
   width: 95%;
@@ -108,6 +123,8 @@ const navigationLinks = ref([
   text-align: center; /* Center align text */
   cursor: pointer; /* Add pointer cursor on hover for better UX */
   transition: background-color 0.3s ease; /* Smooth transition on hover */
+  margin-right: 250px;
+  margin-bottom: 20px ;
 }
 
 .btn:hover {
