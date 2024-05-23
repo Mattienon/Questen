@@ -48,6 +48,12 @@
   import havfrue from '@/assets/figurer/havfrue.png'
   import troldmand from '@/assets/figurer/troldmand.png'
   import arkivaren from '@/assets/figurer/arkivaren.png'
+  import kort from '@/assets/images/kort.jpg'
+  import drage from '@/assets/images/drage.png'
+  import hotelb from '@/assets/images/hotelb.jpg'
+  import arriva from '@/assets/images/arriva.jpg'
+  
+  
   
   const contentOptions1 = ref([
     { title: 'Gnist', img: gnist },
@@ -58,11 +64,11 @@
   ]);
   
   const contentOptions2 = ref([
-    { title: 'Hvad er det', content: 'Når tusmørket begynder at sænke sig over Esbjerg, skrues sværhedsgraden i AftenQuesten op. Nu skal der virkelig tænkes kreativt. Det kræver mod, samarbejde og snilde. Er du vild med at løse gåder og knække koder, så har du den ultimative mulighed i Questen. Questen tager ca. en time at gennemføre', img: 'path_to_img4' },
-    { title: 'Tid & sted', content: 'Torvet i Esbjerg går det løs, kl 18.00-22:30. Tøv ikke og få bestilt en tid, som passer din gruppe.', img: 'path_to_img5' },
+    { title: 'Hvad er det', content: 'Når tusmørket begynder at sænke sig over Esbjerg, skrues sværhedsgraden i AftenQuesten op. Nu skal der virkelig tænkes kreativt. Det kræver mod, samarbejde og snilde. Er du vild med at løse gåder og knække koder, så har du den ultimative mulighed i Questen. Questen tager ca. en time at gennemføre.', img: drage },
+    { title: 'Tid & sted', content: 'På torvet i Esbjerg går det løs, fra 18.00-22:30. Tøv ikke og få bestilt den tid, som passer din gruppe.', img: kort },
     { title: 'Trailer', content: '', img: 'path_to_img6' },
-    { title: 'Overnatning', content: 'I samarbejder med Cabinn Esbjerg og hotel Britania, vil du få 10% rabat på overnatning, når du viser din Quest billet', img: 'path_to_img6' },
-    { title: 'Transport', content: 'Der går mange togforbindelser til Esbjerg station. Stationen ligger 100 m fra Torvet, hvor Questen starter.', img: 'path_to_img6' },
+    { title: 'Overnatning', content: 'I samarbejde med hotel Britannia, vil du få 10% rabat på overnatning, når du viser din Quest billet', img: hotelb },
+    { title: 'Transport', content: 'Der går mange togforbindelser til Esbjerg station. Stationen ligger 100 m fra Torvet, hvor Questen starter.', img: arriva },
   ]);
   
   const currentContent1 = ref({});
