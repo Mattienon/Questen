@@ -1,6 +1,5 @@
 <template>
     <div class="gallery-container">
-      <h1 class="animated-heading">Galleri</h1>
       <div class="row">
         <div v-for="(item, index) in cards" :key="index" class="col-6">
           <div class="card">
@@ -32,7 +31,7 @@
 
   { imageUrl: musik, alt: 'Violin image', text: 'Flot scene med en masse musik.' },
 
-  { imageUrl: heks, alt: 'Violin image', text: 'Kom og mød Maulice.' },
+  { imageUrl: heks, alt: 'Violin image', text: 'Kom og mød Malice.' },
 
   { imageUrl: fotograf, alt: 'Violin image', text: 'Hygge områder, hvor du kan spise og drikke.' },
 
@@ -43,33 +42,29 @@
   
   <style lang="scss" scoped>
   @import '@/assets/hexcolors.scss';
+
   .gallery-container{
-    max-height:300vh;
-  }
-
-
-  .row, h1 {
-    display: flex;
-    justify-content: center;
-    margin: auto;
+    padding: 5%
   }
   
   h1 {
     padding-top: 2rem;
     padding-bottom: 1.5rem;
-  
     color: $primary-yellow;
   }
   
   .card {
-    width: 65%;
-    height: 95%;
+    width: 80%;
+    height: 90%;
     border: solid 8px $primary-yellow;
     padding: 2%;
     text-align: center;
-    display: flex;
-    margin: auto;
     background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: auto;
+    padding: 10%
   }
   
   .feather-border::before,
@@ -86,33 +81,21 @@
   
   img {
     width: 100%;
-    height: 200px; /* Set a fixed height for the images */
+    height: 300px; /* Set a fixed height for the images */
     object-fit: contain;
     display: block;
   }
   
-  .animated-heading {
-    margin-top: -5%;
-    animation: moveUp ease-in-out 0.5s;
-  }
-  
+
   @media (max-width: 700px) {
     .row .col-6 {
       flex-direction: column;
       width: 100%;
       justify-content: center;
       align-items: center;
-      padding: 0%;
-      margin: 0%;
+      margin: auto;
+      margin-top:1rem;
     }
   }
-  
-  @keyframes moveUp {
-    0% {
-      transform: translateY(0);
-    }
-    10% {
-      transform: translateY(-5px);
-    }
-  }
+
   </style>

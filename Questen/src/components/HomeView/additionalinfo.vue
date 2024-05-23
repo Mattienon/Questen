@@ -39,13 +39,15 @@
       description: 'Questen tager ca 1 time og derefter kan du gå ud og nyde godt af hvad Festivalen har at tilbyde.'
     }
   ];
+
+  
   </script>
   
   <style lang="scss" scoped>
   @import '@/assets/hexcolors.scss';
   
   .container {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     width: 100%;
     z-index: 10;
@@ -64,14 +66,14 @@
   
   
   .card {
-    margin: 10px;
+    margin: 5px;
     border: none;
     display: flex;
     flex-direction: column;
     border-radius: 30px;
-  background: linear-gradient(to bottom, $light-purple, $primary-purple);
-  color: #fff;
-  padding: 20px;
+    background: linear-gradient(to bottom, $light-purple, $primary-purple);
+    color: #fff;
+    padding: 20px;
   }
   
   .card-body {
