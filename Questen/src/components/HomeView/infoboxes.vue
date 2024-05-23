@@ -24,7 +24,6 @@
             <h2 class="card-title">{{ currentContent2.title }}</h2>
             <p class="card-text">{{ currentContent2.content }}</p>  
             <img :src="currentContent2.img" class="card-img" alt="Image 2">
-            <!-- <iframe :src="videoUrl" allowfullscreen></iframe> -->
           </div>
           <div ref="swiper2" class="button-group button-group2 swiper-container">
             <div class="swiper-wrapper">
@@ -53,7 +52,6 @@ import drage from '@/assets/images/drage.png'
 import hotelb from '@/assets/images/hotelb.jpg'
 import arriva from '@/assets/images/arriva.jpg'
 // Define the video URL
-const videoUrl = 'https://www.youtube.com/embed/_boQBz9UrHI';
 
 // Define reactive variables
 const contentOptions1 = ref([
@@ -67,7 +65,6 @@ const contentOptions1 = ref([
 const contentOptions2 = ref([
   { title: 'Hvad er det', content: 'Når tusmørket begynder at sænke sig over Esbjerg, skrues sværhedsgraden i AftenQuesten op. Nu skal der virkelig tænkes kreativt. Det kræver mod, samarbejde og snilde. Er du vild med at løse gåder og knække koder, så har du den ultimative mulighed i Questen. Questen tager ca. en time at gennemføre.', img: drage },
   { title: 'Tid & sted', content: 'På torvet i Esbjerg går det løs, fra 18.00-22:30. Tøv ikke og få bestilt den tid, som passer din gruppe.', img: kort },
-  { title: 'Trailer', content: '', src: videoUrl},
   { title: 'Overnatning', content: 'I samarbejde med hotel Britannia, vil du få 10% rabat på overnatning, når du viser din Quest billet', img: hotelb },
   { title: 'Transport', content: 'Der går mange togforbindelser til Esbjerg station. Stationen ligger 100 m fra Torvet, hvor Questen starter.', img: arriva },
 ]);
@@ -184,7 +181,7 @@ h1 {
   }
   
   .button-group {
-    width: 40%;
+    width: 42%;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -258,7 +255,7 @@ h1 {
       flex-direction: row;
       overflow: hidden;
       white-space: nowrap;
-      padding: 10px 0;
+      padding: 12px 0;
       /* Hide the scrollbar */
       -ms-overflow-style: none; /* IE and Edge */
       scrollbar-width: none; /* Firefox */
@@ -271,7 +268,7 @@ h1 {
     .btn {
       position: relative;
       flex: 0 0 auto; /* Prevents buttons from shrinking */
-      width: 20%;
+      width: 25%;
       margin: 0 5px;
     }
   

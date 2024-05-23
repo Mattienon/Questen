@@ -56,7 +56,7 @@ import trailer from '@/components/HomeView/trailer.vue';
 }
 .trailer{
   padding: 0%;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
   width: 100%;
 }
 

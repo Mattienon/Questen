@@ -28,7 +28,7 @@
     background-color: $light-purple; /* Use the SCSS variable */
     color: #fff;
     cursor: pointer;
-    z-index: 999; /* Ensure the button is above other content */
+    z-index: 13; /* Ensure the button is above other content */
     transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
   }
   

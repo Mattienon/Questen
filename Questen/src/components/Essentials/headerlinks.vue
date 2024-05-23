@@ -20,6 +20,7 @@
             </a>
           </div>
           <div class="navigation-links">
+            
             <router-link v-for="(link, index) in navigationLinks" :key="index" :to="link.path" class="nav-link">{{ link.text }}</router-link>
           </div>
           <div class="btn ticket-button" @mouseover="buttonHover(true)" @mouseleave="buttonHover(false)">

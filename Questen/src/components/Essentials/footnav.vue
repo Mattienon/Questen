@@ -48,7 +48,7 @@ const navigationLinks = ref([
   display: flex;
   flex-direction: column;
   margin-top: 5%;
-  z-index: 1000;
+  z-index: 10;
   width: 100%;
 }
 
@@ -135,7 +135,6 @@ const navigationLinks = ref([
   position: absolute;
   right: 2%;
   bottom: 0%;
-  z-index: 1;
   pointer-events: none;
 }
 
