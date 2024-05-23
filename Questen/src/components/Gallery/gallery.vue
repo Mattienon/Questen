@@ -44,7 +44,7 @@
   <style lang="scss" scoped>
   @import '@/assets/hexcolors.scss';
   .gallery-container{
-    height: 260vh;
+    max-height:300vh;
   }
 
 
