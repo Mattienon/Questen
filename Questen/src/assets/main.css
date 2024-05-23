@@ -3,10 +3,8 @@
 
 #app
 {
-  min-height: 400vh;
-  max-height: 600vh;
-  overflow: hidden;
 
+  overflow: hidden;
 }
 /* fonts */
 h1, h2, h3, h4, a{
@@ -29,3 +27,4 @@ p{
   line-height: 18px;
   letter-spacing: 0.8px;
 }
+

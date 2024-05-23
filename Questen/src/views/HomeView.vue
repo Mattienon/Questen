@@ -37,7 +37,6 @@ import hero from '@/components/HomeView/hero.vue';
 import bottomcard from '@/components/HomeView/bottomcard.vue';
 import logoarea from '@/components/HomeView/logoarea.vue';
 import infoboxes from '@/components/HomeView/infoboxes.vue';
-import footnav from '@/components/Essentials/footnav.vue';
 </script>
 
 <style lang="scss" scoped>
@@ -66,7 +65,6 @@ z-index: 20;
 //media
 
 
-
 @media (max-width: 1024px) {
     .info-boxes, .additional-info, .logo-area{
       align-items: center;
@@ -88,8 +86,8 @@ z-index: 20;
     .info-boxes, .additional-info, .logo-area{
       align-items: center;
       margin: auto;
-      width: 75%;
-      padding: 50%
+      width: 85%;
+      padding: 5%
       
     }
     }

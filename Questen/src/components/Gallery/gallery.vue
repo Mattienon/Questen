@@ -26,7 +26,11 @@
   
   <style lang="scss" scoped>
   @import '@/assets/hexcolors.scss';
-  
+  .gallery-container{
+    height: 260vh;
+  }
+
+
   .row, h1 {
     display: flex;
     justify-content: center;

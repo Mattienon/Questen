@@ -1,19 +1,17 @@
 <template>
   <div>
-    <headerlinks/>
+    <headerlinks />
     <main>
-        <div class="outerim">  </div> 
-          <transition>
-              <router-view/>
+      <div class="outerim"></div>
+      <Transition name="slide-fade">
+        <router-view />
       </transition>
- 
-   <!-- outerim -->
-  </main>
-  <totheTOP />
-  
-  </div>  
+    </main>
+    <totheTOP />
+  </div>
   <footnav />
 </template>
+
 
 <script setup>
 import { RouterView } from 'vue-router';
@@ -33,12 +31,11 @@ $notchSize: 15px;
   align-items: center;
   position: absolute;
   overflow: hidden;
-  top: 12%;
+  top: 15%;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 85%;
-  min-height: 400vh;
   z-index: -1;
   border: 10px outset $primary-yellow;
   background: linear-gradient(to bottom, $primary-purple 70%, $primary-green 95%);
@@ -54,11 +51,41 @@ $notchSize: 15px;
   );
 }
 
-@media (max-width: 800px) {
+@media (min-width: 1024px) {
   .outerim {
-    min-height: 550vh;
+    min-height: 300vh;
     width: 95%;
   }
 }
 
+@media (max-width: 1500px) {
+  .outerim {
+    min-height: 250vh;
+    width: 95%;
+  }
+}
+
+@media (max-width: 800px) {
+  .outerim {
+    min-height: 350vh;
+    width: 95%;
+  }
+}
+
+@media (max-width: 600px) {
+  .outerim {
+    min-height: 250vh;
+    width: 95%;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>

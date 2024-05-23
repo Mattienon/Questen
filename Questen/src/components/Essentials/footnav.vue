@@ -40,7 +40,7 @@
   .position {
   display: flex;
   flex-direction: column;
-  height: 500vh;
+  min-height: 80vh;
   z-index: 1000;
 }
 
