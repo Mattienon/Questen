@@ -1,7 +1,7 @@
 <template>
     <div class="home-view body">   
 
-      <div class="hero-area">
+      <div class="heroarea">
           <hero/>
       </div>  
     <div class="outerim">
@@ -11,14 +11,13 @@
       </div>
 
       <!-- Logo Area -->
-      <div class="logo-area">
+      <div class="logoarea">
         <logoarea />
       </div>
-
       <!-- Additional Info -->
-      <div class="additional-info">
+   
         <additionalinfo />
-      </div>
+  
 
       <!-- Bottom Card -->
       <div class="bottom-card">
@@ -48,10 +47,10 @@ import footnav from '@/components/Essentials/footnav.vue';
   justify-content: center;
   z-index: 10;
 }
-
 .info-boxes{
-  margin-top: 25%;
+  margin-top: 20%;
 }
+
 $notchSize: 15px;
 
 .outerim {
@@ -61,7 +60,7 @@ $notchSize: 15px;
   align-items: center;
   position: relative;
   width: 88%;
-  margin-top: -23%; /* Adjust based on your design */
+  margin-top: -22%; /* Adjust based on your design */
   z-index: 1; /* Ensuring it is below the hero area */
   border: 10px outset $primary-yellow;
   background: linear-gradient(to bottom, $primary-purple 70%, $primary-green 95%);
@@ -77,61 +76,61 @@ $notchSize: 15px;
   );
 }
 
-.hero-area {
+.heroarea {
   width: 95%;
   z-index: 5; /* Ensuring it is above the outerim */
   margin-top: 8%;
-}
-
-.additional-info {
-  margin-top: 8%;
+  z-index: 10;
 }
 
 .bottom-card {
-  margin-top: 10%;
-  width: 98%;
+  width: 100%;
   z-index: 2;
-  padding-bottom: 5%;
+  padding-bottom: 8%;
+  padding-top: 8%;
 }
-
+.logoarea{
+  margin-bottom: 10%;
+}
 // Media queries
 
-@media (max-width: 1600px) {
+@media (max-width: 800px) {
   .info-boxes, .additional-info, .logo-area{
     align-items: center;
     margin: auto;
     width: 85%;
-    padding: 5%;
-    padding-top: 20%;
+    padding: 2%;
+    padding-top: 8%;
   }
   .outerim {
-    margin-top: -25%;
-    padding-top: 8%;
+    margin-top: -45%;
+    padding-top: 15%;
     width: 95%;
   }
 
-  .logo-area {
+  .logoarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20%;
    
   }
 }
 
 @media (max-width: 360px) {
-  .logo-area {
-    display: none;
+  .logo-area{
+    padding: 40%;
   }
   .outerim {
-    margin-top: -80%;
+    margin-top: -70%;
     padding-top: 40%;
     width: 95%;
   }
-  .info-boxes, .additional-info, .logo-area {
+  .info-boxes, .additional-info {
     align-items: center;
     margin: auto;
     width: 85%;
-    padding: 5%;
+    padding: 0;
   }
 }
 </style>

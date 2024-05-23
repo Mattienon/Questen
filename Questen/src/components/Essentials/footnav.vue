@@ -2,7 +2,7 @@
   <div class="position">
     <footer class="footer">
       <div class="greenfoot">  
-        <div class="btn btn-dark"><span>Til fantasy festival</span></div>
+        <div class="btn btn-dark"><span>Fantasy Festival</span></div>
         <span class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam itaque sint natus, libero.</span>
       
       </div>
@@ -131,6 +131,9 @@ const navigationLinks = ref([
 
   .btn, .title {
     display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
     border-radius: 50px;
     width: 40%;

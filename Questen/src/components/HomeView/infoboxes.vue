@@ -224,14 +224,18 @@ setCurrentContent2(contentOptions2.value[0]);
   }
   
   @media (max-width: 800px) {
+    .container{
+      padding: 0;
+    }
     .card{
-      margin-top: 40%;
+      width: 200%;
+      margin-top: 50%;
       margin-left: -5%;
     }
     .card-img1 {
-    width: 130%;
+    width: 140%;
     margin-top: -50%;
-    margin-left: -1%;
+    margin-left: -20%;
   }
     .row {
       flex-direction: column; /* Stack cards vertically on smaller screens */
@@ -254,7 +258,7 @@ setCurrentContent2(contentOptions2.value[0]);
     .btn {
       position: relative;
       flex: 0 0 auto; /* Prevents buttons from shrinking */
-      width: 40%;
+      width: 20%;
       margin: 0 5px;
     }
   

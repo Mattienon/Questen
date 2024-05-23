@@ -99,8 +99,8 @@
       margin: 0;
     }
     .countdown-segment {
-      font-size: 35px;
-      padding: 20px 8px; /* Adjust padding for smaller screens */
+      font-size: 18px;
+      padding: 10px 8px; /* Adjust padding for smaller screens */
     }
   }
   </style>

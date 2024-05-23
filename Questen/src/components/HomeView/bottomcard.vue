@@ -4,8 +4,8 @@
       <h1>Questen er et uendeligt eventyr</h1>
     </div>
     <div class="cardcontent">
-      <h2>Hvert år er en ny oplevelse</h2>
-      <p>Skriv dig op til opdateringer om kommende Quest nyheder og Events</p>
+      <h2>Nyt hvert år</h2>
+      <span class="text">Skriv dig op til opdateringer om kommende Quest nyheder og Events</span>
       <!-- Email sign-up form -->
       <form class="signup-form" @submit.prevent="submitForm" novalidate>
         <label for="email" class="visually-hidden">Email</label>
@@ -41,9 +41,13 @@ const submitForm = () => {
 <style lang="scss" scoped>
 @import '@/assets/hexcolors.scss';
 
-.cardtitle, .cardcontent, p {
-  padding: 1rem;
+.cardtitle, .cardcontent{
+  padding: 0.1rem;
   color: $primary-yellow;
+}
+.text{
+  font-style: oblique;
+  color: black;
 }
 
 /* Add visually hidden class for accessibility */
@@ -114,11 +118,8 @@ const submitForm = () => {
 }
 
 @media (max-width: 600px) {
-  .cardtitle h1 {
-    font-size: 1.5rem;
-  }
-  .cardcontent h2 {
-    font-size: 1.2rem;
+  .cardtitle, h1{
+    display: none;
   }
   .signup-form input[type="email"], .signup-form button {
     font-size: 0.9rem;

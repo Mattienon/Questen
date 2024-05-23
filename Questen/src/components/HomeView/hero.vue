@@ -20,7 +20,7 @@ import countdown from '@/components/HomeView/countdown.vue';
 
 h1 {
   color: $primary-yellow;
-  font-size: 5vw;
+  font-size: 8vw;
   margin: 0;
 }
 
@@ -49,7 +49,14 @@ a {
   padding: 1rem;
 }
 
+ 
+@media (max-width: 560px) {
+    .h1{
+      font-size: 20rem;
+    }
 
+  }
+    
 
 /* Hover effect */
 .card:hover {

@@ -2,7 +2,7 @@
     <header :class="['sticky-header', { 'collapse-expanded': isCollapseExpanded }]">
       <router-link to="/" class="logo" @mouseover="logoHover(true)" @mouseleave="logoHover(false)">
         <h1>{{ brandName }}</h1>
-        <hr class="vertical-line" :class="{ 'vertical-line-hover': isLogoHovered }">
+        <hr class="vertical-line">
         <div class="additional-info">
           <span>{{ eventDate }}</span>
           <span>{{ eventLocation }}</span>
@@ -73,9 +73,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 15px;
+    padding: 15px 40px;
     z-index: 10;
-    background: linear-gradient(to bottom, $primary-purple 0%, $light-purple(20%) 20%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to bottom, $primary-purple 5%, $light-purple(55%) 30%, rgba(0, 0, 0, 0) 100%);
     overflow-x: hidden;
   
     &.collapse-expanded .logo {
@@ -85,7 +85,7 @@
   
   .logo {
     display: flex;
-    flex-direction: column;
+    margin-left: 1%;
     align-items: center;
     justify-content: center;
   }
@@ -93,13 +93,13 @@
   h1, a {
     text-decoration: none;
     color: $primary-yellow;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   
   .vertical-line {
-    border-left: 2px solid $primary-yellow;
+    border-left: 3px solid $primary-yellow;
     height: 35px;
-    margin: 0.5rem;
+    margin: 1rem;
   }
   
   .additional-info {
@@ -111,18 +111,19 @@
   
   .btn {
     border-radius: 20px;
-    padding: 0px 15px;
+    padding: 2px 15px;
     background-color: $primary-purple;
     border: none;
   }
   
-  .btn a {
+  .btn, .a {
     color: white;
     text-decoration: none;
+    margin-left: 2rem;
   }
   
   .nav-link {
-    padding: 0.5rem;
+    padding: 0.2rem;
     color: $primary-yellow;
     text-decoration: none;
     font-weight: 700;
@@ -144,8 +145,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     margin: 5px;
     transition: background-color 0.3s ease;
