@@ -4,7 +4,7 @@
       <div class="greenfoot">  
         <div class="btn btn-dark"><span>Fantasy Festival</span></div>
         <span class="text">
-          <p> Kontakt os</p>
+          <h1>Kontakt os</h1>
           <p> Fantasyfestival@esbjerg.dk  </p>
           <p> 79 000000</p>
           
@@ -75,6 +75,10 @@ const navigationLinks = ref([
 .text {
   padding-left: 1rem;
   color: white; /* Change text color to white for better visibility */
+}
+.text h1{
+  font-size: 25px;
+  margin-bottom: 15px;
 }
 
 .text p {
