@@ -22,8 +22,9 @@
           <h1>Udforsk Questen</h1>
           <div class="card-body"> 
             <h2 class="card-title">{{ currentContent2.title }}</h2>
-            <p class="card-text">{{ currentContent2.content }}</p>
+            <p class="card-text">{{ currentContent2.content }}</p>  
             <img :src="currentContent2.img" class="card-img" alt="Image 2">
+            <!-- <iframe :src="videoUrl" allowfullscreen></iframe> -->
           </div>
           <div ref="swiper2" class="button-group button-group2 swiper-container">
             <div class="swiper-wrapper">
@@ -31,17 +32,17 @@
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   </div>
 </template>
 
-  
-  
 <script setup>
 import { ref, onMounted } from 'vue';
 import Swiper from 'swiper';
 
+// Import images
 import malice from '@/assets/figurer/Malice.png'
 import gnist from '@/assets/figurer/gnist.png'
 import havfrue from '@/assets/figurer/havfrue.png'
@@ -51,7 +52,10 @@ import kort from '@/assets/images/kort.jpg'
 import drage from '@/assets/images/drage.png'
 import hotelb from '@/assets/images/hotelb.jpg'
 import arriva from '@/assets/images/arriva.jpg'
+// Define the video URL
+const videoUrl = 'https://www.youtube.com/embed/_boQBz9UrHI';
 
+// Define reactive variables
 const contentOptions1 = ref([
   { title: 'Gnist', img: gnist },
   { title: 'Malice', img: malice },
@@ -63,34 +67,31 @@ const contentOptions1 = ref([
 const contentOptions2 = ref([
   { title: 'Hvad er det', content: 'Når tusmørket begynder at sænke sig over Esbjerg, skrues sværhedsgraden i AftenQuesten op. Nu skal der virkelig tænkes kreativt. Det kræver mod, samarbejde og snilde. Er du vild med at løse gåder og knække koder, så har du den ultimative mulighed i Questen. Questen tager ca. en time at gennemføre.', img: drage },
   { title: 'Tid & sted', content: 'På torvet i Esbjerg går det løs, fra 18.00-22:30. Tøv ikke og få bestilt den tid, som passer din gruppe.', img: kort },
-  { title: 'Trailer', content: '', img: 'path_to_img6' },
+  { title: 'Trailer', content: '', src: videoUrl},
   { title: 'Overnatning', content: 'I samarbejde med hotel Britannia, vil du få 10% rabat på overnatning, når du viser din Quest billet', img: hotelb },
   { title: 'Transport', content: 'Der går mange togforbindelser til Esbjerg station. Stationen ligger 100 m fra Torvet, hvor Questen starter.', img: arriva },
 ]);
 
 const currentContent1 = ref({});
 const currentContent2 = ref({});
+const showModal = ref(false); // Initially, the modal is not shown
 
+// Method to set the current content of the first card
 const setCurrentContent1 = (option) => {
   currentContent1.value = option;
-  // Add 'active' class to the clicked button and remove it from others
-  contentOptions1.value.forEach((item, index) => {
-    const button = document.querySelector(`.button-group1 .btn:nth-child(${index + 1})`);
-    if (button) {
-      if (item.title === option.title) {
-        button.classList.add('active');
-      } else {
-        button.classList.remove('active');
-      }
-    }
-  });
+  activateButton(option, contentOptions1);
 };
 
+// Method to set the current content of the second card
 const setCurrentContent2 = (option) => {
   currentContent2.value = option;
-  // Add 'active' class to the clicked button and remove it from others
-  contentOptions2.value.forEach((item, index) => {
-    const button = document.querySelector(`.button-group2 .btn:nth-child(${index + 1})`);
+  activateButton(option, contentOptions2);
+};
+
+// Method to activate the clicked button and deactivate others
+const activateButton = (option, contentOptions) => {
+  contentOptions.value.forEach((item, index) => {
+    const button = document.querySelector(`.button-group .btn:nth-child(${index + 1})`);
     if (button) {
       if (item.title === option.title) {
         button.classList.add('active');
@@ -101,6 +102,17 @@ const setCurrentContent2 = (option) => {
   });
 };
 
+// Method to open the modal
+const openModal = () => {
+  showModal.value = true;
+};
+
+// Method to close the modal
+const closeModal = () => {
+  showModal.value = false;
+};
+
+// Function to initialize Swiper if screen width is less than 800px
 onMounted(() => {
   if (window.innerWidth < 800) {
     new Swiper('.swiper-container', {
@@ -114,37 +126,38 @@ onMounted(() => {
 setCurrentContent1(contentOptions1.value[0]);
 setCurrentContent2(contentOptions2.value[0]);
 </script>
+<style lang="scss" scoped>
+/* Import custom SCSS variables if needed */
+@import '@/assets/hexcolors.scss';
 
-  
-  <style lang="scss" scoped>
-  @import '@/assets/hexcolors.scss';
-  
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
-    text-align: center;
-    margin-top: 10%;
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    width: 150%;
-    justify-content: space-around;
-  }
-  
-  .col {
-    flex: 1 1 45%;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  h1 {
-    color: $primary-yellow;
-  }
+/* Styles for the container, rows, and cards */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150%;
+  justify-content: space-around;
+}
+
+.col {
+  flex: 1 1 45%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Typography styles */
+h1 {
+  color: $primary-yellow;
+}
   p{
     text-align: start;
   }

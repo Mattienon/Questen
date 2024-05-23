@@ -1,6 +1,8 @@
 <template>
     <div class="home-view body">   
-
+  <div class="logoarea">
+        <logoarea />
+      </div>
       <div class="heroarea">
           <hero/>
       </div>  
@@ -11,9 +13,10 @@
       </div>
 
       <!-- Logo Area -->
-      <div class="logoarea">
-        <logoarea />
-      </div>
+    
+      <div class="trailer">
+      <trailer/>
+    </div>
       <!-- Additional Info -->
    
         <additionalinfo />
@@ -35,6 +38,7 @@ import bottomcard from '@/components/HomeView/bottomcard.vue';
 import logoarea from '@/components/HomeView/logoarea.vue';
 import infoboxes from '@/components/HomeView/infoboxes.vue';
 import footnav from '@/components/Essentials/footnav.vue'; 
+import trailer from '@/components/HomeView/trailer.vue';
 </script>
 
 <style lang="scss" scoped>
@@ -50,6 +54,11 @@ import footnav from '@/components/Essentials/footnav.vue';
 .info-boxes{
   margin-top: 20%;
 }
+.trailer{
+  padding: 0%;
+  margin-bottom: 5%;
+  width: 100%;
+}
 
 $notchSize: 15px;
 
@@ -60,7 +69,7 @@ $notchSize: 15px;
   align-items: center;
   position: relative;
   width: 88%;
-  margin-top: -22%; /* Adjust based on your design */
+  margin-top: -30%; /* Adjust based on your design */
   z-index: 1; /* Ensuring it is below the hero area */
   border: 10px outset $primary-yellow;
   background: linear-gradient(to bottom, $primary-purple 70%, $primary-green 95%);
@@ -79,7 +88,7 @@ $notchSize: 15px;
 .heroarea {
   width: 95%;
   z-index: 5; /* Ensuring it is above the outerim */
-  margin-top: 8%;
+  margin-top: 11%;
   z-index: 10;
 }
 
@@ -90,7 +99,8 @@ $notchSize: 15px;
   padding-top: 8%;
 }
 .logoarea{
-  margin-bottom: 10%;
+  margin-bottom: -10%;
+  z-index: 11;
 }
 // Media queries
 
@@ -112,8 +122,6 @@ $notchSize: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20%;
-   
   }
 }
 
@@ -122,8 +130,8 @@ $notchSize: 15px;
     padding: 40%;
   }
   .outerim {
-    margin-top: -70%;
-    padding-top: 40%;
+    margin-top: -90%;
+    padding-top: 60%;
     width: 95%;
   }
   .info-boxes, .additional-info {
