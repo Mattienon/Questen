@@ -20,7 +20,7 @@
         </div>
         
         <div class="footerimg">
-          <img src="@/assets/Images/raven.svg" alt="Raven Image">
+          <img src="@/assets/images/raven.svg" alt="Raven Image">
         </div>
       </footer>
     </div>
@@ -35,22 +35,24 @@
     { path: '/About', text: 'Terms of Service' }
   ]);
   </script>
-  
   <style lang="scss" scoped>
   @import '@/assets/hexcolors.scss';
   .position {
-    display: flex;
-    flex-direction: column;
-    min-height: 250vh; /* Ensure it takes the full viewport height */
-  }
-  
-  .footer {
-    margin-top: auto; /* Pushes the footer to the bottom */
-    display: flex;
-    flex-direction: column;
-    background-color: $primary-green;
-    position: relative;
-  }
+  display: flex;
+  flex-direction: column;
+  min-height: 500vh; /* Ensure the container takes the full viewport height */
+}
+
+.footer {
+  margin-top: auto; /* Pushes the footer to the bottom */
+  display: flex;
+  flex-direction: column;
+  background-color: $primary-green;
+  position: relative;
+  bottom: 0; /* Set the footer at the bottom */
+  width: 100%; /* Make sure the footer spans the full width */
+}
+
   
   .p {
     color: black;
