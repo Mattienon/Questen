@@ -13,7 +13,7 @@
        
       </div> 
       <div class="btn btn-dark">
-            <span>KØB BILLET</span>
+          <span>Køb billet</span><a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"></a>
         </div>
     </div>
   </template>

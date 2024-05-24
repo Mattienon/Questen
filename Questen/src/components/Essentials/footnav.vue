@@ -2,7 +2,8 @@
   <div class="position">
     <footer class="footer">
       <div class="greenfoot">
-        <div class="btn btn-dark"><span>Fantasy Festival</span></div>
+        <div class="btn btn-dark"><span>Fantasy Festival</span>
+        <a href="https://fantasyfestival.dk/?fbclid=IwZXh0bgNhZW0CMTAAAR1ZMJS2b2wdTkfAQG0RO-IuCHwH4cwbqfDSKA0EXc9yIfbQOiXbcaN3kxk_aem_AQnLnjLlYKKqqM_K8qdGP67lVhPQAzMb4nQpLdycwurc1iK1pBcjrV20KfvwRlp2C4ohoIoGYvcaZK8xAjzNLreS"></a></div>
         <span class="text">
           <h1>Kontakt os</h1>
           <p>Fantasyfestival@esbjerg.dk</p>

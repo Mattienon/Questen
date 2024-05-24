@@ -37,8 +37,8 @@
   import { Icon } from '@iconify/vue';
   
   const socialMediaLinks = ref([
-    { name: 'Facebook', icon: 'mdi-facebook', url: 'https://www.facebook.com' },
-    { name: 'Instagram', icon: 'mdi-instagram', url: 'https://www.instagram.com' },
+    { name: 'Facebook', icon: 'mdi-facebook', url: 'https://www.facebook.com/fantasyfestivalen/' },
+    { name: 'Instagram', icon: 'mdi-instagram', url: 'https://www.instagram.com/fantasyfestivalen/' },
   ]);
   
   const brandName = ref("QUEST");
