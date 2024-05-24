@@ -13,8 +13,9 @@
        
       </div> 
       <div class="btn btn-dark">
-          <span>Køb billet</span><a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"></a>
-        </div>
+  <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"><span>Køb billet</span></a>
+</div>
+
     </div>
   </template>
   
@@ -51,6 +52,10 @@
   }
 span{
     font-size: 33px;
+}
+a{
+  text-decoration: none;
+  color: black;
 }
   .videocontainer iframe {
     width: 1080px;

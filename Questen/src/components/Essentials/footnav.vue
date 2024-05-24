@@ -2,8 +2,10 @@
   <div class="position">
     <footer class="footer">
       <div class="greenfoot">
-        <div class="btn btn-dark"><span>Fantasy Festival</span>
-        <a href="https://fantasyfestival.dk/?fbclid=IwZXh0bgNhZW0CMTAAAR1ZMJS2b2wdTkfAQG0RO-IuCHwH4cwbqfDSKA0EXc9yIfbQOiXbcaN3kxk_aem_AQnLnjLlYKKqqM_K8qdGP67lVhPQAzMb4nQpLdycwurc1iK1pBcjrV20KfvwRlp2C4ohoIoGYvcaZK8xAjzNLreS"></a></div>
+        <div class="btn btn-dark"> 
+  <a href="https://fantasyfestival.dk/"><span>Fantasy Festival</span></a>
+</div>
+
         <span class="text">
           <h1>Kontakt os</h1>
           <p>Fantasyfestival@esbjerg.dk</p>
@@ -97,7 +99,7 @@ const navigationLinks = ref([
   padding: 8px 0;
 }
 
-.footer-link {
+.footer-link{
   color: $primary-yellow;
   text-decoration: none;
   display: flex;
@@ -136,7 +138,10 @@ const navigationLinks = ref([
   pointer-events: none;
 }
 
-
+a{
+  text-decoration: none;
+  color: black;
+}
 @media (max-width: 1000px) {
   .footerimg {
     position: absolute;
