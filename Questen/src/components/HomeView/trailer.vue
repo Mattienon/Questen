@@ -79,6 +79,7 @@ span{
     width: 350px;
     height: 300px; 
   }
+
   .btn{
     padding: 5px 15px;
     background-color: $primary-green;

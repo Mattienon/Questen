@@ -41,7 +41,7 @@
 import { ref, onMounted } from 'vue';
 import Swiper from 'swiper';
 
-// Import images
+// image
 import malice from '@/assets/figurer/Malice.png'
 import gnist from '@/assets/figurer/gnist.png'
 import havfrue from '@/assets/figurer/havfrue.png'
@@ -51,9 +51,8 @@ import kort from '@/assets/images/kort.jpg'
 import drage from '@/assets/images/drage.png'
 import hotelb from '@/assets/images/hotelb.jpg'
 import arriva from '@/assets/images/arriva.jpg'
-// Define the video URL
 
-// Define reactive variables
+
 const contentOptions1 = ref([
   { title: 'Gnist', img: gnist },
   { title: 'Malice', img: malice },
@@ -127,7 +126,7 @@ setCurrentContent2(contentOptions2.value[0]);
 /* Import custom SCSS variables if needed */
 @import '@/assets/hexcolors.scss';
 
-/* Styles for the container, rows, and cards */
+
 .container {
   display: flex;
   justify-content: center;
@@ -202,16 +201,16 @@ h1 {
   
   .btn {
   margin: 5px 0;
-  background-color: rgba(13, 81, 13, 0.547); /* Example color */
+  background-color: rgba(13, 81, 13, 0.547); 
   border: none;
   padding: 5px 3px;
   width: 100%;
-  transition: opacity 0.2s ease; /* Smooth transition for opacity changes */
+  transition: opacity 0.2s ease; 
 }
 
 .btn.active {
   opacity: 1;
-  background-color: $primary-green; /* Full opacity for active button */
+  background-color: $primary-green; 
 }
 
   
@@ -230,7 +229,7 @@ h1 {
   
   .button-group1:hover,
   .button-group2:hover {
-    transform: translateY(-5px); /* Move button group up on hover */
+    transform: translateY(-5px); 
   }
   
   @media (max-width: 800px) {
@@ -267,7 +266,7 @@ h1 {
   
     .btn {
       position: relative;
-      flex: 0 0 auto; /* Prevents buttons from shrinking */
+      flex: 0 0 auto; 
       width: 25%;
       margin: 0 5px;
     }

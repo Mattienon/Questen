@@ -189,19 +189,24 @@
       display: flex !important;
       flex-direction: row;
       align-items: center;
+    
     }
     .navigation-links {
       flex-direction: row;
+
     }
   }
   
   @media (max-width: 767px) {
-    .sticky-header {
+    .sticky-header{
       flex-direction: row;
       justify-content: center;
     }
     .additional-info{
       display: none;
+    }
+    .navigation-links{
+      margin-left: 0;
     }
     .navbar-collapse {
       flex-direction: column;

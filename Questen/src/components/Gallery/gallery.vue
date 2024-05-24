@@ -83,7 +83,7 @@
   
   img {
     width: 100%;
-    height: 300px; /* Set a fixed height for the images */
+    height: 300px; 
     object-fit: contain;
     display: block;
   }
@@ -97,7 +97,7 @@
     }
     img {
     width: 100%;
-    height: 100px; /* Set a fixed height for the images */
+    height: 100px; 
   }
   .card{
     width: 80%

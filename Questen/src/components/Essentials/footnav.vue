@@ -13,7 +13,7 @@
       <div class="whiteframe">
         <div class="navigation-links">
           <span class="copyright">@Copyright Quest 2024</span>
-          <!-- Iterate over navigationLinks and create anchor tags -->
+        
           <a
             v-for="(link, index) in navigationLinks"
             :key="index"
@@ -50,31 +50,31 @@ const navigationLinks = ref([
 }
 
 .footer {
-  margin-top: auto; /* Pushes the footer to the bottom */
+  margin-top: auto; 
   display: flex;
   flex-direction: column;
   background-color: $primary-green;
   position: relative;
-  bottom: 0; /* Set the footer at the bottom */
-  width: 100%; /* Make sure the footer spans the full width */
-  border-top-left-radius: 100px; /* Adjust as needed */
-  border-top-right-radius: 100px; /* Adjust as needed */
+  bottom: 0; 
+  width: 100%; 
+  border-top-left-radius: 100px; 
+  border-top-right-radius: 100px;
 }
 
 .greenfoot {
   width: 70%;
-  padding: 10px; /* Added padding for better spacing */
+  padding: 10px;
   margin-top: 2%;
   margin-left: 2%;
   display: flex;
-  justify-content: start; /* Align items evenly */
-  align-items: center; /* Vertically center items */
+  justify-content: start; 
+  align-items: center; 
 }
 
 .text {
   font-size: 25px;
   margin-bottom: 15px;
-  color: rgb(0, 0, 0); /* Change text color to white for better visibility */
+  color: rgb(0, 0, 0); 
 }
 
 .text p {
@@ -109,9 +109,9 @@ const navigationLinks = ref([
 }
 
 .btn {
-  border-radius: 25px; /* Reduced border radius for a more subtle appearance */
-  width: 200px; /* Increased button width for better clickability */
-  padding: 10px; /* Added padding for better button appearance */
+  border-radius: 25px; 
+  width: 200px; 
+  padding: 10px; 
   background-color: $primary-yellow;
   border: none;
   color: black;

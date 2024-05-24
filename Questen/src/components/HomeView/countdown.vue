@@ -75,14 +75,14 @@
   
   .countdown-segment {
     margin: 5px;
-    padding: 40px 20px; /* Add padding inside each segment */
+    padding: 40px 20px; 
     font-size: 60px;
     color: $primary-green;
-    background-color: $light-purple; /* Background color for each segment */
-    border: solid 5px $primary-yellow; /* Border around each segment */
-    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to each segment */
-    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth hover effect */
+    background-color: $light-purple; 
+    border: solid 5px $primary-yellow; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; 
   }
   
   .countdown-segment:hover {
@@ -100,7 +100,7 @@
     }
     .countdown-segment {
       font-size: 18px;
-      padding: 10px 8px; /* Adjust padding for smaller screens */
+      padding: 10px 8px; 
     }
   }
   </style>

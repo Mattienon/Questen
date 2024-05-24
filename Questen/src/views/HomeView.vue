@@ -1,6 +1,6 @@
 <template>
     <div class="home-view body">   
-        <svgpos/>
+        <drage/>
   <div class="logoarea">
         <logoarea />
       </div>
@@ -8,22 +8,22 @@
           <hero/>
       </div>  
     <div class="outerim">
-      <!-- Info Boxes -->
+    
       <div class="info-boxes">
         <infoboxes />
       </div>
 
-      <!-- Logo Area -->
+      
     
       <div class="trailer">
       <trailer/> 
     </div>
-      <!-- Additional Info -->
+      
    
         <additionalinfo />
   
 
-      <!-- Bottom Card -->
+      
       <div class="bottom-card">
         <bottomcard />
       </div>
@@ -41,7 +41,7 @@ import logoarea from '@/components/HomeView/logoarea.vue';
 import infoboxes from '@/components/HomeView/infoboxes.vue';
 import footnav from '@/components/Essentials/footnav.vue'; 
 import trailer from '@/components/HomeView/trailer.vue';
-import svgpos from '@/components/Essentials/svgpos.vue';
+import drage from '@/components/Essentials/drageanim.vue';
 </script>
 
 <style lang="scss" scoped>
@@ -59,7 +59,7 @@ import svgpos from '@/components/Essentials/svgpos.vue';
 }
 .trailer{
   padding: 0%;
-  margin-bottom: 8%;
+  margin-bottom: 10%;
   width: 100%;
 }
 
@@ -72,8 +72,8 @@ $notchSize: 15px;
   align-items: center;
   position: relative;
   width: 88%;
-  margin-top: -30%; /* Adjust based on your design */
-  z-index: 1; /* Ensuring it is below the hero area */
+  margin-top: -30%;
+  z-index: 1;
   border: 10px outset $primary-yellow;
   background: linear-gradient(to bottom, $light-purple -70%, $primary-purple 50% 83%, $primary-green 96%);
   clip-path: polygon(
@@ -90,7 +90,7 @@ $notchSize: 15px;
 
 .heroarea {
   width: 95%;
-  z-index: 5; /* Ensuring it is above the outerim */
+  z-index: 5; 
   margin-top: 11%;
   z-index: 10;
 }
@@ -143,6 +143,9 @@ $notchSize: 15px;
     width: 85%;
     padding: 0;
   }
+  .trailer{
+  margin-bottom: 20%;
+}
 }
 </style>
 
