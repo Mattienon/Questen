@@ -28,8 +28,8 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .video-container {
-  position: fixed;
-  top: 5%;
+  position: absolute;
+  top: 1%;
   left: 0;
   width: 90%;
   height: 90%;
@@ -39,6 +39,15 @@ onMounted(() => {
 .video {
   width: 16%;
   pointer-events: none; 
+}
+
+@media (max-width: 1200px) {
+  .video-container {
+   top: 5%;
+  }
+  .video {
+  width: 25%
+}
 }
 
 @media (max-width: 800px) {
