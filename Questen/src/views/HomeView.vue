@@ -72,7 +72,7 @@ $notchSize: 15px;
   margin-top: -30%; /* Adjust based on your design */
   z-index: 1; /* Ensuring it is below the hero area */
   border: 10px outset $primary-yellow;
-  background: linear-gradient(to bottom, $primary-purple 70%, $primary-green 95%);
+  background: linear-gradient(to bottom, $light-purple -70%, $primary-purple 50% 83%, $primary-green 96%);
   clip-path: polygon(
     0% $notchSize, 
     $notchSize 0%, 

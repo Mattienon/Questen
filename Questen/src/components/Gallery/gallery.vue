@@ -38,6 +38,8 @@
   { imageUrl: elf , alt: 'Violin image', text: 'Mange dygtige skuespillere.' },
  
   ]);
+
+  
   </script>
   
   <style lang="scss" scoped>

@@ -29,12 +29,12 @@ $notchSize: 15px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative; /* Changed from absolute to relative */
+  position: relative;
   width: 88%;
-  margin-top: 2%; /* To adjust top position */
+  margin-top: 2%;
   z-index: -1;
   border: 10px outset $primary-yellow;
-  background: linear-gradient(to bottom, $primary-purple 70%, $primary-green 95%);
+  background: linear-gradient(to bottom, $light-purple -30%, $primary-purple 50% 65%, $primary-green 85%);
   clip-path: polygon(
     0% $notchSize, 
     $notchSize 0%, 

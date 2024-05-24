@@ -1,29 +1,28 @@
-<template> 
+<template>
   <div class="position">
     <footer class="footer">
-      <div class="greenfoot">  
+      <div class="greenfoot">
         <div class="btn btn-dark"><span>Fantasy Festival</span></div>
         <span class="text">
           <h1>Kontakt os</h1>
-          <p> Fantasyfestival@esbjerg.dk  </p>
-          <p> 79 000000</p>
-          
-      </span>
-      
+          <p>Fantasyfestival@esbjerg.dk</p>
+          <p>79 000000</p>
+        </span>
       </div>
-      
+
       <div class="whiteframe">
         <div class="navigation-links">
           <span class="copyright">@Copyright Quest 2024</span>
-          <RouterLink
+          <!-- Iterate over navigationLinks and create anchor tags -->
+          <a
             v-for="(link, index) in navigationLinks"
             :key="index"
-            :to="link.path"
+            :href="link.path"
             class="footer-link"
-          >{{ link.text }}</RouterLink>
+          >{{ link.text }}</a>
         </div>
       </div>
-      
+
       <div class="footerimg">
         <img src="@/assets/images/raven.svg" alt="Raven Image">
       </div>
@@ -33,11 +32,10 @@
 
 <script setup>
 import { ref } from 'vue';
-import { RouterLink } from 'vue-router';
 
 const navigationLinks = ref([
-  { path: '/', text: 'Privacy Policy' },
-  { path: '/About', text: 'Terms of Service' }
+  { path: 'https://animejs.com/documentation/#visibilitychange', text: 'Billetter' },
+  { path: 'https://animejs.com/documentation/#visibilitychange', text: 'Det med småt' }
 ]);
 </script>
 
@@ -46,7 +44,6 @@ const navigationLinks = ref([
 
 .position {
   display: flex;
-  flex-direction: column;
   margin-top: 5%;
   z-index: 10;
   width: 100%;
@@ -60,32 +57,31 @@ const navigationLinks = ref([
   position: relative;
   bottom: 0; /* Set the footer at the bottom */
   width: 100%; /* Make sure the footer spans the full width */
+  border-top-left-radius: 100px; /* Adjust as needed */
+  border-top-right-radius: 100px; /* Adjust as needed */
 }
 
 .greenfoot {
-  width: 80%;
-  padding: 20px; /* Added padding for better spacing */
+  width: 70%;
+  padding: 10px; /* Added padding for better spacing */
   margin-top: 2%;
-  margin-left: 1.5%;
+  margin-left: 2%;
   display: flex;
-  justify-content: center; /* Align items evenly */
+  justify-content: start; /* Align items evenly */
   align-items: center; /* Vertically center items */
-  background-color: $primary-green;
 }
+
 .text {
-  padding-left: 1rem;
-  color: white; /* Change text color to white for better visibility */
-}
-.text h1{
   font-size: 25px;
   margin-bottom: 15px;
+  color: rgb(0, 0, 0); /* Change text color to white for better visibility */
 }
 
 .text p {
   font-size: 18px;
- color: white;
- margin-right: 50px;
+  color: white;
 }
+
 .whiteframe {
   background-color: white;
   width: 95%;
@@ -124,12 +120,13 @@ const navigationLinks = ref([
   cursor: pointer; /* Add pointer cursor on hover for better UX */
   transition: background-color 0.3s ease; /* Smooth transition on hover */
   margin-right: 250px;
-  margin-bottom: 20px ;
+  margin-bottom: 20px;
 }
 
 .btn:hover {
   background-color: darken($primary-yellow, 10%); /* Darken button color on hover */
 }
+
 .footerimg {
   width: 22%;
   position: absolute;
@@ -138,7 +135,7 @@ const navigationLinks = ref([
   pointer-events: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .footerimg {
     position: absolute;
     right: -5%;
@@ -147,10 +144,8 @@ const navigationLinks = ref([
 
   .btn, .title {
     display: flex;
-    align-items: center;
-    display: flex;
+    align-items: start;
     justify-content: center;
-    align-items: center;
     border-radius: 50px;
     width: 40%;
     margin: auto;
@@ -159,7 +154,7 @@ const navigationLinks = ref([
   .greenfoot {
     width: 90%;
     padding-left: 3%;
-    margin-top: 10%;
+    margin-top: 5%;
   }
 
   .whiteframe {
@@ -180,11 +175,8 @@ const navigationLinks = ref([
     bottom: 10%;
   }
 
-
   .copyright, .text{
     display: none; /* Hide the span on smaller screens */
   }
 }
-
- 
 </style>

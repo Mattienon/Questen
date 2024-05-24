@@ -71,9 +71,9 @@
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    background: linear-gradient(to bottom, $light-purple, $primary-purple);
+    background: linear-gradient(to bottom, $secondary-purple, $primary-purple, transparent);
     color: #fff;
-    padding: 20px;
+    padding: 30px;
   }
   
   .card-body {

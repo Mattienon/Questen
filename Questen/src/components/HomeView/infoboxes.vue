@@ -165,7 +165,7 @@ h1 {
   height: 60%;
   border: none;
   border-radius: 30px;
-  background: linear-gradient(to bottom, $secondary-purple, $primary-purple);
+  background: linear-gradient(to bottom, $secondary-purple, $primary-purple, transparent);
   color: #fff;
   padding: 20px;
 }

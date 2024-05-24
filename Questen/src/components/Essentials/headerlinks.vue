@@ -91,10 +91,11 @@
     justify-content: center;
   }
   
-  h1, a {
+  a {
     text-decoration: none;
     color: $primary-yellow;
     font-size: 1.3rem;
+    
   }
   
   .vertical-line {
@@ -120,7 +121,7 @@
   .btn, .a {
     color: white;
     text-decoration: none;
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
   
   .nav-link {
@@ -134,6 +135,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 1rem;
   }
   
   .social-links {
@@ -144,23 +146,25 @@
   
   .social-link, .menu-icon {
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin: 5px;
-    transition: background-color 0.3s ease;
-  }
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0.2rem;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform transition */
+}
   
   .social-icon {
     font-size: 25px;
     color: #ffffff;
+  margin: auto;
   }
   
   .social-link:hover {
-    background-color: $primary-yellow;
-  }
+  background-color: $primary-yellow;
+  transform: scale(1.1); /* Added scale effect */
+}
   
   .logo:hover {
     transform: scale(1.05);
