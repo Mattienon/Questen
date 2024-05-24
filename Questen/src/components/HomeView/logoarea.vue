@@ -5,9 +5,12 @@
     </video>
   </div>
 </template>
+<script setup>
+</script>
 
 <style lang="scss" scoped>
 @import '@/assets/hexcolors.scss';
+
 
 .video-container {
   width: 400px; /* Set the width of the circle */

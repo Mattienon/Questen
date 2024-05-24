@@ -34,8 +34,8 @@
 import { ref } from 'vue';
 
 const navigationLinks = ref([
-  { path: 'https://animejs.com/documentation/#visibilitychange', text: 'Billetter' },
-  { path: 'https://animejs.com/documentation/#visibilitychange', text: 'Det med småt' }
+  { path: 'https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4', text: 'Billetter' },
+  { path: '/', text: 'Det med småt' }
 ]);
 </script>
 
@@ -134,6 +134,7 @@ const navigationLinks = ref([
   bottom: 0%;
   pointer-events: none;
 }
+
 
 @media (max-width: 1000px) {
   .footerimg {

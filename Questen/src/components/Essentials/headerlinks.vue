@@ -76,7 +76,7 @@
     align-items: center;
     padding: 15px 40px;
     z-index: 15;
-    background: linear-gradient(to bottom, $primary-purple 5%, $light-purple(55%) 30%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to bottom, $primary-purple 0% 10%, $light-purple(50%), transparent);
     overflow-x: hidden;
   
     &.collapse-expanded .logo {
@@ -91,7 +91,7 @@
     justify-content: center;
   }
   
-  a {
+   a {
     text-decoration: none;
     color: $primary-yellow;
     font-size: 1.3rem;

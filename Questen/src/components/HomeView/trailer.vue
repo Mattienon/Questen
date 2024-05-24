@@ -26,7 +26,7 @@
   @import '@/assets/hexcolors.scss';
   
   .card {
-    background: linear-gradient(to bottom,$primary-purple, $secondary-purple 15% 65%, $primary-purple);
+    background: linear-gradient(to bottom, transparent, $secondary-purple 20% 90%, transparent);
     border: none;
     width: 100%;
     height: 50vh;
@@ -36,7 +36,8 @@
       margin-bottom: 8%;
   }
 .btn{
-  margin-top: -6%;
+  z-index: 2;
+  margin-top: -8%;
     padding: 12px;
     background-color: $primary-green;
     border: none;
@@ -53,15 +54,30 @@ span{
 }
   .videocontainer iframe {
     width: 1080px;
-    height: 720px;
+    height: 700px;
     padding: 10%;
+    border-radius: 50%;
 
   }
 
   @media (max-width: 1000px){
    .videocontainer iframe{
+    width: 650px;
+    height: 400px; 
+  }
+  .btn{
+    padding: 5px 15px;
+    background-color: $primary-green;
+}
+span{
+    font-size: 30px;
+}
+}
+
+@media (max-width: 400px){
+   .videocontainer iframe{
     width: 350px;
-    height: 250px; 
+    height: 300px; 
   }
   .btn{
     padding: 5px 15px;

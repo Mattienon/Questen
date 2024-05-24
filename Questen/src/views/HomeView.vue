@@ -1,5 +1,6 @@
 <template>
     <div class="home-view body">   
+        <svgpos/>
   <div class="logoarea">
         <logoarea />
       </div>
@@ -15,7 +16,7 @@
       <!-- Logo Area -->
     
       <div class="trailer">
-      <trailer/>
+      <trailer/> 
     </div>
       <!-- Additional Info -->
    
@@ -27,6 +28,7 @@
         <bottomcard />
       </div>
     </div>
+ 
     <footnav/>
   </div>
 </template>
@@ -39,6 +41,7 @@ import logoarea from '@/components/HomeView/logoarea.vue';
 import infoboxes from '@/components/HomeView/infoboxes.vue';
 import footnav from '@/components/Essentials/footnav.vue'; 
 import trailer from '@/components/HomeView/trailer.vue';
+import svgpos from '@/components/Essentials/svgpos.vue';
 </script>
 
 <style lang="scss" scoped>
