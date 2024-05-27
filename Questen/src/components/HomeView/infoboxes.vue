@@ -59,9 +59,9 @@ import arriva from '@/assets/images/arriva.jpg'
 const contentOptions1 = ref([
   { title: 'Gnist', img: gnist },
   { title: 'Malice', img: malice },
-  { title: 'Havfrue', img: havfrue },
-  { title: 'Troldmand', img: troldmand },
-  { title: 'arkivaren', img: arkivaren },
+  { title: 'Havfruedronning', img: havfrue },
+  { title: 'Gygaz', img: troldmand },
+  { title: 'Arkivaren', img: arkivaren },
 ]);
 
 const contentOptions2 = ref([
