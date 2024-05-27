@@ -4,6 +4,9 @@
       <!-- First Card -->
       <div class="col">
         <div class="card card1">
+         <h1> Mød Karakterende</h1>
+         <h2>i samarbejde med Dystopia</h2>
+         <p>I Questen vil du møde karakterer som bærer inde med mere en bare et gnist!</p>
           <div class="card-body">
             <img :src="currentContent1.img" class="card-img1" alt="Image 1">
             <p class="card-text">{{ currentContent1.content }}</p>
@@ -66,6 +69,7 @@ const contentOptions2 = ref([
   { title: 'Tid & sted', content: 'På torvet i Esbjerg går det løs, fra 18.00-22:30. Tøv ikke og få bestilt den tid, som passer din gruppe.', img: kort },
   { title: 'Overnatning', content: 'I samarbejde med hotel Britannia, vil du få 10% rabat på overnatning, når du viser din Quest billet', img: hotelb },
   { title: 'Transport', content: 'Der går mange togforbindelser til Esbjerg station. Stationen ligger 100 m fra Torvet, hvor Questen starter.', img: arriva },
+  { title: 'Parkering', content: 'Der er rigt på parkeringsmuligheder i området. Med gratis Parkering fra 2-4 timer. Bla. Broen shopping center og Esbjerg Hovedbibliotek mm.' },
 ]);
 
 const currentContent1 = ref({});
@@ -178,7 +182,8 @@ h1 {
   .card-img1 {
     width: 100%;
   }
-  
+  //button area
+
   .button-group {
     width: 42%;
     position: absolute;
@@ -201,10 +206,10 @@ h1 {
   
   .btn {
   margin: 5px 0;
-  background-color: rgba(13, 81, 13, 0.547); 
+  background-color: rgba(48, 132, 48, 0.868); 
   border: none;
-  padding: 5px 3px;
-  width: 100%;
+  padding: 12px;
+  width: 80%;
   transition: opacity 0.2s ease; 
 }
 
@@ -243,7 +248,6 @@ h1 {
     }
     .card-img1 {
     width: 140%;
-    margin-top: -50%;
     margin-left: -20%;
   }
     .row {

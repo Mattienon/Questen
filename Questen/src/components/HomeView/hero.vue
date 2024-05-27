@@ -6,6 +6,7 @@
           </div>
           <div class="cardcontent">
               <countdown/>
+              <!-- <h2>14. September 2024</h2> -->
           </div>
       </div>
   </div>
@@ -23,6 +24,11 @@ h1 {
   font-size: 8vw;
   margin: 0;
 }
+h2 {
+  color: white;
+  font-size: 5vw;
+  margin: 0;
+}
 
 a {
   text-decoration: none;
@@ -33,9 +39,6 @@ a {
 
 .card {
   background-color: $light-purple;
-  height: 100%;
-  max-height: 350px;
-  width: 100%;
   outline: none;
   border: none;
   text-align: center;
@@ -46,7 +49,7 @@ a {
   box-shadow: 0 80px 100px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease;
   margin: auto;
-  padding: 1rem;
+
 }
 
  

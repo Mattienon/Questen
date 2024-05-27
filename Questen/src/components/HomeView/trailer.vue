@@ -11,12 +11,12 @@
           <iframe :src="videoUrl" frameborder="0" allowfullscreen></iframe>
         </div>
        
-      </div> 
-      <div class="btn btn-dark">
-  <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"><span>Køb billet</span></a>
-</div>
+        </div>   <div class="btn btn-dark">
+           <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"><span>Køb billet</span></a>
+        </div>
+      </div>
 
-    </div>
+  
   </template>
   
   <script setup>
@@ -27,21 +27,21 @@
   @import '@/assets/hexcolors.scss';
   
   .card {
-    background: linear-gradient(to bottom, transparent, $secondary-purple 20% 90%, transparent);
+    background: linear-gradient(to bottom, transparent 20%, $primary-green 50%, transparent 80%);
     border: none;
     width: 100%;
-    height: 50vh;
     display: flex;
     align-items: center;
      justify-content: center;
-      margin-bottom: 8%;
+     margin-top: 10%;
+
   }
 .btn{
-  z-index: 2;
-  margin-top: -8%;
-    padding: 12px;
+    z-index: 2;
+    margin-top: -8%;
+    padding: 10px;
     background-color: $primary-green;
-    border: none;
+    border: solid $primary-yellow;
     box-shadow: 0 0px 2px rgba(0, 0, 0, 0.3); 
 }
   .btn:hover{
@@ -61,7 +61,6 @@ a{
     width: 1080px;
     height: 700px;
     padding: 10%;
-    border-radius: 50%;
 
   }
 

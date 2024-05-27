@@ -43,7 +43,7 @@
   
   const brandName = ref("QUEST");
   const eventDate = ref('14 .Sep 2024');
-  const eventLocation = ref('Esbjerg torvet');
+  const eventLocation = ref('Esbjerg på Torvet');
   const ticketText = ref('Køb billet');
   
   const navigationLinks = ref([
@@ -109,6 +109,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
+  
   }
   
   .btn {
@@ -125,7 +126,7 @@
   }
   
   .nav-link {
-    padding: 0.2rem;
+    padding: 0.8rem;
     color: $primary-yellow;
     text-decoration: none;
     font-weight: 700;

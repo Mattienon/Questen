@@ -34,6 +34,7 @@ onMounted(() => {
   width: 90%;
   height: 90%;
   z-index: 0;
+  pointer-events: none;
 }
 
 .video {
